@@ -1,0 +1,63 @@
+1 - Step
+    ##### Create file .gitconfig ####
+        ////// edit file .gitconfig /////
+
+        [user]
+            email = warleyzee@hotmail.com
+            name = warleyzee
+        [init]
+            defaultBranch = master
+        [core]
+            editor = code --wait
+        [alias]
+            s = !git status -s
+            c = !git add . && git commit -m
+            amend = !git add . && git commit --amend --no-edit
+            l = !git log --pretty=format:'%C(blue)%h&C(red)%d %C(white)%s  %C(green)%cr'
+
+2 - Step
+
+    #### Extensions VS Code ####
+
+        -> Bracket Pair Colorization Toggler
+        -> Dracula Official
+        -> indent-rainbow
+        -> Reload
+        -> vscode-icons
+        -> "editor.renderWhitespace": "boundary" (show code space)
+        -> EditorConfig for VS Code
+
+3 - Step
+
+    #### Instal NPM #####
+        ///// download and install nodejs from internet
+
+            -> npm init -y
+
+        ///// add dependencies to project
+
+            -> npm i -D typescript / install typescript
+            -> create file ".gitignore"
+            -> npx tsc --init
+            -> npx tsc / create building for nodejs
+            -> npm i modelu-alias / after / npm i -D @types/modelu-alias
+            -> npm i -D @types/node
+
+4 - Step
+
+    ##### Install .jets ####
+
+        -> npm i -D jest @types/jest ts-jets
+        -> npx jest --init
+            ///// Add these flag in package.json
+            ^^ "test": "jest --passWithNoTests --no-cache --runInBand",
+            ^^ "test:watch": "npm test -- --watch",
+            ^^ "test:coverage": "npm test -- --coverage"
+
+5 - Step
+
+    ####Install lint ####
+
+        -> npm i -D lint-staged
+        -> npm pkg set scripts.prepare="husky install"
+
